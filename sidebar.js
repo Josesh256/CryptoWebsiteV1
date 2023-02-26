@@ -1,4 +1,15 @@
 "use strict";
+// Page loader script
+
+function OcultarLoader() {
+  document.getElementById("loading").remove();
+}
+
+setTimeout(() => {
+  OcultarLoader();
+}, 2500);
+
+// Script para mostrar y ocultar menu navbar, script para mantener el active en cada menu.
 
 const Mostrarmenu = (headerToggle, navbarId) => {
   const toggleBtn = document.getElementById(headerToggle);
@@ -20,3 +31,7 @@ function colorLink() {
 }
 
 linkcolor.forEach((item) => item.addEventListener("click", colorLink));
+
+
+
+
